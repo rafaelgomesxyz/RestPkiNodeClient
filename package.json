@@ -1,0 +1,21 @@
+{
+  "name": "restpki-client",
+  "version": "1.0.0",
+  "description": "Classes to consume Lacuna Software REST PKI",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "lacuna",
+    "rest",
+    "pki",
+    "client",
+    "api",
+    "signature"
+  ],
+  "author": "Ismael Medeiros by Lacuna Software",
+  "dependencies": {
+    "request": "^2.67.0"
+  }
+}
