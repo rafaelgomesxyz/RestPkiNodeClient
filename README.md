@@ -8,14 +8,12 @@ The recommend way to install **Rest PKI Client Lib** is through [npm](https://ww
 
 Or informing on your project's `package.json` file:
 
-```json
-{
-  ...
-  "dependencies": {
-    "restpki-client": "1.0.0"
-  }
-}
-```
+    {
+      ...
+      "dependencies": {
+        "restpki-client": "1.0.0"
+      }
+    }
 
 Samples
 -------
