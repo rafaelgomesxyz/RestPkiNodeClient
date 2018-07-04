@@ -5,7 +5,7 @@ const { CadesSignature, CadesTimestamp } = require('./lib/cades-signature');
 const { CadesSignatureExplorer } = require('./lib/cades-signature-explorer');
 const { CadesSignatureFinisher } = require('./lib/cades-signature-finisher');
 const { CadesSignatureStarter } = require('./lib/cades-signature-starter');
-const { CadesSignerInfo } = require('./lib/cades-signer-info');
+const { CadesSignerInfo } = require('./lib/cades-signature');
 const { Color } = require('./lib/color');
 const {
    DigestAlgorithm,
