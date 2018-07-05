@@ -1,0 +1,10 @@
+.git/
+.gitignore
+
+# for npm
+.idea/
+
+# for WebStorm
+node_modules/
+
+npm-debug.log
