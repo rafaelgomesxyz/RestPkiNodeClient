@@ -1,5 +1,5 @@
-REST PKI client lib for PHP
-===========================
+REST PKI client lib for Node.js
+===============================
 This library contains classes that encapsulate the calls to the REST PKI API.
 
 The recommend way to install **Rest PKI Client Lib** is through [npm](https://www.npmjs.com/):
