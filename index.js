@@ -17,6 +17,7 @@ const {
 } = require('./lib/digest-algorithm');
 const { DigestAlgorithmAndValue } = require('./lib/digest-algorithm-and-value');
 const {
+   Apis,
    DigestAlgorithms,
    SignatureAlgorithms,
    PKAlgorithms,
@@ -31,7 +32,9 @@ const {
    PdfMarkPageOptions
 } = require('./lib/enums');
 const { FileResult } = require('./lib/file-result');
+const { FileModel } = require('./lib/file-model');
 const { FullXmlSignatureStarter } = require('./lib/full-xml-signature-starter');
+const { ApiVersion } = require('./lib/api-version');
 const { VERSION } = require('./lib/lib-version');
 const { Oids } = require('./lib/oids');
 const { PadesSignature } = require('./lib/pades-signature');
@@ -87,6 +90,8 @@ exports.SHA256DigestAlgorithm = SHA256DigestAlgorithm;
 exports.SHA384DigestAlgorithm = SHA384DigestAlgorithm;
 exports.SHA512DigestAlgorithm = SHA512DigestAlgorithm;
 exports.DigestAlgorithmAndValue = DigestAlgorithmAndValue;
+exports.Apis = Apis;
+exports.ApiVersion = ApiVersion;
 exports.DigestAlgorithms = DigestAlgorithms;
 exports.SignatureAlgorithms = SignatureAlgorithms;
 exports.PKAlgorithms = PKAlgorithms;
@@ -100,6 +105,7 @@ exports.PdfTextStyle = PdfTextStyle;
 exports.PdfMarkElementType = PdfMarkElementType;
 exports.PdfMarkPageOptions = PdfMarkPageOptions;
 exports.FileResult = FileResult;
+exports.FileModel = FileModel;
 exports.FullXmlSignatureStarter = FullXmlSignatureStarter;
 exports.VERSION = VERSION;
 exports.Oids = Oids;
