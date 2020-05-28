@@ -32,6 +32,7 @@ const {
    PdfMarkPageOptions
 } = require('./lib/enums');
 const { FileResult } = require('./lib/file-result');
+const { FileReference } = require('./lib/file-reference');
 const { FileModel } = require('./lib/file-model');
 const { FullXmlSignatureStarter } = require('./lib/full-xml-signature-starter');
 const { ApiVersion } = require('./lib/api-version');
@@ -105,6 +106,7 @@ exports.StandardSignaturePolicies = StandardSignaturePolicies;
 exports.PdfTextStyle = PdfTextStyle;
 exports.PdfMarkElementType = PdfMarkElementType;
 exports.PdfMarkPageOptions = PdfMarkPageOptions;
+exports.FileReference = FileReference;
 exports.FileResult = FileResult;
 exports.FileModel = FileModel;
 exports.FullXmlSignatureStarter = FullXmlSignatureStarter;
