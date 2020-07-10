@@ -28,7 +28,8 @@ const {
    StandardSignaturePolicies,
    PdfTextStyle,
    PdfMarkElementType,
-   PdfMarkPageOptions
+   PdfMarkPageOptions,
+   PadesCertificationLevels,
 } = require('./lib/enums');
 const { FileResult } = require('./lib/file-result');
 const { FullXmlSignatureStarter } = require('./lib/full-xml-signature-starter');
@@ -98,6 +99,7 @@ exports.StandardSignaturePolicies = StandardSignaturePolicies;
 exports.PdfTextStyle = PdfTextStyle;
 exports.PdfMarkElementType = PdfMarkElementType;
 exports.PdfMarkPageOptions = PdfMarkPageOptions;
+exports.PadesCertificationLevels = PadesCertificationLevels;
 exports.FileResult = FileResult;
 exports.FullXmlSignatureStarter = FullXmlSignatureStarter;
 exports.VERSION = VERSION;
