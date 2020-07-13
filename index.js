@@ -29,7 +29,8 @@ const {
    StandardSignaturePolicies,
    PdfTextStyle,
    PdfMarkElementType,
-   PdfMarkPageOptions
+   PdfMarkPageOptions,
+   PadesCertificationLevels
 } = require('./lib/enums');
 const { FileResult } = require('./lib/file-result');
 const { FileReference } = require('./lib/file-reference');
@@ -106,6 +107,7 @@ exports.StandardSignaturePolicies = StandardSignaturePolicies;
 exports.PdfTextStyle = PdfTextStyle;
 exports.PdfMarkElementType = PdfMarkElementType;
 exports.PdfMarkPageOptions = PdfMarkPageOptions;
+exports.PadesCertificationLevels = PadesCertificationLevels;
 exports.FileReference = FileReference;
 exports.FileResult = FileResult;
 exports.FileModel = FileModel;
