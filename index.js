@@ -1,6 +1,7 @@
 'use strict';
 const { Authentication } = require('./lib/authentication');
 const { AuthenticationResult } = require('./lib/authentication-result');
+const {BlobReference} = require('./lib/blob-reference');
 const { CadesSignature, CadesTimestamp } = require('./lib/cades-signature');
 const { CadesSignatureExplorer } = require('./lib/cades-signature-explorer');
 const { CadesSignatureFinisher } = require('./lib/cades-signature-finisher');
@@ -79,6 +80,7 @@ const { XmlSignatureStarter } = require('./lib/xml-signature-starter');
 
 exports.Authentication = Authentication;
 exports.AuthenticationResult = AuthenticationResult;
+exports.BlobReference = BlobReference;
 exports.CadesSignature = CadesSignature;
 exports.CadesTimestamp = CadesTimestamp;
 exports.CadesSignatureExplorer = CadesSignatureExplorer;
