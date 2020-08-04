@@ -30,7 +30,7 @@ const {
    PdfTextStyle,
    PdfMarkElementType,
    PdfMarkPageOptions,
-   PadesCertificationLevels
+   PadesCertificationLevels,
 } = require('./lib/enums');
 const { FileResult } = require('./lib/file-result');
 const { FileReference } = require('./lib/file-reference');
