@@ -1,6 +1,7 @@
 'use strict';
 const { Authentication } = require('./lib/authentication');
 const { AuthenticationResult } = require('./lib/authentication-result');
+const {BlobReference} = require('./lib/blob-reference');
 const { CadesSignature, CadesTimestamp } = require('./lib/cades-signature');
 const { CadesSignatureExplorer } = require('./lib/cades-signature-explorer');
 const { CadesSignatureFinisher } = require('./lib/cades-signature-finisher');
@@ -17,6 +18,7 @@ const {
 } = require('./lib/digest-algorithm');
 const { DigestAlgorithmAndValue } = require('./lib/digest-algorithm-and-value');
 const {
+   Apis,
    DigestAlgorithms,
    SignatureAlgorithms,
    PKAlgorithms,
@@ -32,7 +34,10 @@ const {
    PadesCertificationLevels,
 } = require('./lib/enums');
 const { FileResult } = require('./lib/file-result');
+const { FileReference } = require('./lib/file-reference');
+const { FileModel } = require('./lib/file-model');
 const { FullXmlSignatureStarter } = require('./lib/full-xml-signature-starter');
+const { ApiVersion } = require('./lib/api-version');
 const { VERSION } = require('./lib/lib-version');
 const { Oids } = require('./lib/oids');
 const { PadesSignature } = require('./lib/pades-signature');
@@ -50,11 +55,13 @@ const { PdfMarkTextElement } = require('./lib/pdf-mark-text-element');
 const { PdfMarker } = require('./lib/pdf-marker');
 const { PdfTextSection } = require('./lib/pdf-text-section');
 const { SignatureAlgorithm, RSASignatureAlgorithm, RSAPKAlgorithm, PKAlgorithm } = require('./lib/pk-algorithms');
+const { StreamUtils, ReadableStreamClone } = require('./lib/stream-utils');
 const { PKCertificate, PkiBrazilCertificateFields, PkiItalyCertificateFields, Name } = require('./lib/pk-certificate');
 const { ResourceContentOrReference } = require('./lib/resource-content-or-reference');
 const { RestBaseError } = require('./lib/rest-base-error');
 const { RestError } = require('./lib/rest-error');
 const { RestPkiClient } = require('./lib/rest-pki-client');
+const { RestClient } = require('./lib/rest-client');
 const { RestPkiError } = require('./lib/rest-pki-error');
 const { RestUnreachableError } = require('./lib/rest-unreachable-error');
 const { SignatureAlgorithmAndValue } = require('./lib/signature-algorithm-and-value');
@@ -73,6 +80,7 @@ const { XmlSignatureStarter } = require('./lib/xml-signature-starter');
 
 exports.Authentication = Authentication;
 exports.AuthenticationResult = AuthenticationResult;
+exports.BlobReference = BlobReference;
 exports.CadesSignature = CadesSignature;
 exports.CadesTimestamp = CadesTimestamp;
 exports.CadesSignatureExplorer = CadesSignatureExplorer;
@@ -87,6 +95,8 @@ exports.SHA256DigestAlgorithm = SHA256DigestAlgorithm;
 exports.SHA384DigestAlgorithm = SHA384DigestAlgorithm;
 exports.SHA512DigestAlgorithm = SHA512DigestAlgorithm;
 exports.DigestAlgorithmAndValue = DigestAlgorithmAndValue;
+exports.Apis = Apis;
+exports.ApiVersion = ApiVersion;
 exports.DigestAlgorithms = DigestAlgorithms;
 exports.SignatureAlgorithms = SignatureAlgorithms;
 exports.PKAlgorithms = PKAlgorithms;
@@ -100,7 +110,9 @@ exports.PdfTextStyle = PdfTextStyle;
 exports.PdfMarkElementType = PdfMarkElementType;
 exports.PdfMarkPageOptions = PdfMarkPageOptions;
 exports.PadesCertificationLevels = PadesCertificationLevels;
+exports.FileReference = FileReference;
 exports.FileResult = FileResult;
+exports.FileModel = FileModel;
 exports.FullXmlSignatureStarter = FullXmlSignatureStarter;
 exports.VERSION = VERSION;
 exports.Oids = Oids;
@@ -126,9 +138,12 @@ exports.PKCertificate = PKCertificate;
 exports.PkiBrazilCertificateFields = PkiBrazilCertificateFields;
 exports.PkiItalyCertificateFields = PkiItalyCertificateFields;
 exports.Name = Name;
+exports.StreamUtils = StreamUtils;
+exports.ReadableStreamClone = ReadableStreamClone;
 exports.ResourceContentOrReference = ResourceContentOrReference;
 exports.RestBaseError = RestBaseError;
 exports.RestError = RestError;
+exports.RestClient = RestClient;
 exports.RestPkiClient = RestPkiClient;
 exports.RestPkiError = RestPkiError;
 exports.RestUnreachableError = RestUnreachableError;
